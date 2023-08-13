@@ -1,0 +1,23 @@
+public static void plusMinus(List<Integer> arr) {
+    
+        double posCnt = 0;
+        double negCnt = 0;
+        double zeroCnt = 0;
+        
+        for (int num : arr) {
+            if (num > 0) {
+                posCnt++;
+            } else if (num < 0) {
+                negCnt++;
+            } else {
+                zeroCnt++;
+            }
+        }
+        
+        System.out.println(String.format("%6f", posCnt / arr.size()));
+        System.out.println(String.format("%6f", negCnt / arr.size()));
+        System.out.println(String.format("%6f", zeroCnt / arr.size()));
+
+    }
+
+}
